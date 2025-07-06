@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 # Hugging Face API setup
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3-medium-diffusers"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer hf_API_KEY"}
 
 def query_img(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
